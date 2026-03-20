@@ -1,0 +1,22 @@
+{
+  "name": "social-media-skills",
+  "owner": "threads-power-tool",
+  "version": "1.0.0",
+  "description": "Social media skills for AI agents — content strategy, creation, and analysis for LinkedIn, Twitter/X, Threads, and Bluesky",
+  "skills": [
+    "social-media-context",
+    "content-strategy",
+    "content-calendar",
+    "platform-strategy",
+    "post-writer",
+    "thread-writer",
+    "carousel-writer",
+    "content-repurposer",
+    "hook-writer",
+    "performance-analyzer",
+    "audience-growth-tracker",
+    "content-pattern-analyzer",
+    "optimization-advisor"
+  ],
+  "strict": false
+}
