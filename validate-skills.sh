@@ -13,9 +13,9 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 RESET='\033[0m'
 
-pass() { echo -e "${GREEN}  ✓ $1${RESET}"; ((PASS++)); }
-warn() { echo -e "${YELLOW}  ⚠️  $1${RESET}"; ((WARN++)); }
-fail() { echo -e "${RED}  ❌ $1${RESET}"; ((FAIL++)); }
+pass() { echo -e "${GREEN}  ✓ $1${RESET}"; PASS=$((PASS + 1)); }
+warn() { echo -e "${YELLOW}  ⚠️  $1${RESET}"; WARN=$((WARN + 1)); }
+fail() { echo -e "${RED}  ❌ $1${RESET}"; FAIL=$((FAIL + 1)); }
 
 if [[ ! -d "$SKILLS_DIR" ]]; then
   echo -e "${YELLOW}No skills/ directory found — nothing to validate.${RESET}"
