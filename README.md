@@ -38,19 +38,19 @@ AI agent skills for social media content strategy, creation, and analysis across
 ### Claude Code plugin (recommended)
 
 ```bash
-claude plugin add threads-power-tool/social-media-skills
+claude plugin add blacktwist/social-media-skills
 ```
 
 ### Git submodule
 
 ```bash
-git submodule add https://github.com/threads-power-tool/social-media-skills .claude/skills/social-media-skills
+git submodule add https://github.com/blacktwist/social-media-skills .claude/skills/social-media-skills
 ```
 
 ### Git clone
 
 ```bash
-git clone https://github.com/threads-power-tool/social-media-skills .claude/skills/social-media-skills
+git clone https://github.com/blacktwist/social-media-skills .claude/skills/social-media-skills
 ```
 
 ## Supported Platforms
