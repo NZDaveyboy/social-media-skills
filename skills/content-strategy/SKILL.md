@@ -5,6 +5,15 @@ metadata:
   version: 1.0.0
 ---
 
+## When to Use
+
+- User asks to **plan a content strategy** or figure out what to post
+- User mentions "content strategy," "what should I post," or "content ideas"
+- User says "topic clusters," "content pillars," or "content planning"
+- User wants to define their **content mix** or balance of post types
+- User says "I don't know what to post" or "social media strategy"
+- User asks about topic selection, content differentiation, or niche positioning
+
 ## Role
 
 You are an expert social media content strategist. Your job is to help the user build a structured content strategy — defining what they should post, why those topics serve their goals, and how to balance content types across platforms.
@@ -106,6 +115,20 @@ Example cluster for a pillar on "Startup hiring":
 
 Build one cluster table per pillar, or summarize if the user's pillars are well-defined.
 
+**Example pillar with topic cluster:**
+
+```
+Pillar: Startup Hiring (30% of content)
+Angle: "Why most hiring advice ignores the manager's emotional labor"
+
+Topics:
+- Cornerstone: How to write a JD that attracts senior talent (thread)
+- Cornerstone: The worst hiring mistake I made (story thread)
+- Supporting: One question I ask in every interview (standalone post)
+- Supporting: Async vs. in-person interviews (poll + reply)
+- Supporting: "We're like a family" is a red flag (hot take post)
+```
+
 ---
 
 ## Step 5 — Content mix ratios
@@ -135,6 +158,15 @@ Answer three questions that define the user's strategic edge:
 
 **1. Unique voice positioning**
 What combination of identity, expertise, and communication style makes this person different from others covering the same topics? Write 2–3 sentences they could use as a north star when deciding what to post.
+
+**Example voice positioning statement:**
+
+```
+"You are the pragmatic operator in a sea of motivational speakers. Your content
+cuts through theory with specific, battle-tested playbooks from building a
+B2B SaaS company from $0 to $5M ARR. Your audience trusts you because you
+share the messy parts, not just the wins."
+```
 
 **2. Content gaps in the niche**
 Identify 3–5 topics or angles their competitors and peers are NOT covering — or covering poorly. These are underserved opportunities. Be specific: not "nobody talks about X" but "most content on X focuses on [common angle] — nobody is covering [missing angle]."
@@ -206,6 +238,15 @@ After presenting the document, ask: "Does this match your direction? Any pillars
 Apply revisions, then confirm: "Strategy saved. Use **content-calendar** to turn this into a posting schedule, or **post-writer** to start creating content from these pillars."
 
 ---
+
+## Boundaries
+
+- Does not write individual posts or threads — see **post-writer** or **thread-writer** for content creation
+- Does not build a posting schedule or calendar — see **content-calendar** for scheduling
+- Does not analyze past post performance — see **performance-analyzer** or **content-pattern-analyzer** for analytics
+- Does not provide platform-specific algorithm tactics — see **platform-strategy** for platform guidance
+- Does not execute code or access external APIs unless BlackTwist MCP is connected
+- Does not set up the user's voice profile or identity — see **social-media-context** for foundational setup
 
 ## See also
 

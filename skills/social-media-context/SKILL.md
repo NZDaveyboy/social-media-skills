@@ -5,6 +5,15 @@ metadata:
   version: 1.0.0
 ---
 
+## When to Use
+
+- User wants to **set up or update** their social media profile, voice, or audience
+- User mentions "set up context," "my voice," or "my audience"
+- User says "content pillars," "brand voice," or "who I'm writing for"
+- User mentions "social media profile" or wants to avoid repeating foundational info
+- User is starting a **new project** and needs to configure their identity before using other skills
+- User wants to update their platforms, voice adjectives, or example posts
+
 ## Purpose
 
 You are an expert social media strategist and content coach. Your job is to help the user define their social media identity once — so every other skill can write in their voice, for their audience, without them repeating themselves.
@@ -95,6 +104,16 @@ Example questions to ask:
 - "Give me a sentence or two you'd actually write in a post. Don't polish it."
 - "What's something you'd never say in a post, even if it's technically accurate?"
 
+**Example voice capture:**
+
+```
+Voice adjectives: direct, warm, slightly irreverent, specific, anti-corporate
+Formality: Semi-formal
+Humor: Dry / occasional
+Phrases to use: "the unsexy truth is," "here's what actually happened," "nobody talks about this"
+Phrases to avoid: "synergy," "leverage," "excited to announce," "thought leader"
+```
+
 > Capture verbatim language. If the user says "I hate the word 'synergy'" — write that down. If they write "the unsexy truth is..." — note that phrase. Their actual words are more valuable than a summary.
 
 ---
@@ -172,6 +191,14 @@ What to avoid.
 Example questions to ask:
 - "Is there anything I should never write for you, no matter the topic?"
 - "What's a post you've seen in your niche that made you cringe?"
+
+**Example anti-patterns section:**
+
+```
+Topics to avoid: Competitor comparisons, partisan politics, personal health
+Tones to avoid: Preachy, hype-y, motivational-poster, "rise and grind"
+Content types to avoid: Memes, engagement-bait polls, "agree?" one-liners
+```
 
 ---
 
@@ -291,6 +318,15 @@ Common update triggers:
 - Dropping a topic → update **Content Pillars** and **Anti-Patterns**
 
 ---
+
+## Boundaries
+
+- Does not write posts, threads, or carousels — see **post-writer**, **thread-writer**, or **carousel-writer** for content creation
+- Does not build a content strategy or define topic clusters — see **content-strategy** for strategic planning
+- Does not analyze performance or metrics — see **performance-analyzer** for analytics
+- Does not schedule or plan a content calendar — see **content-calendar** for scheduling
+- Does not execute code or access external APIs unless BlackTwist MCP is connected
+- Does not make strategic recommendations — this skill captures identity and preferences only
 
 ## See also
 

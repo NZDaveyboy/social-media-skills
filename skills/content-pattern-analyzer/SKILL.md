@@ -7,6 +7,16 @@ metadata:
 
 # Content Pattern Analyzer
 
+## When to Use
+
+- User asks to **find patterns** in what content works and what does not
+- User mentions "what's working," "content patterns," or "best topics"
+- User says "best format," "best time to post," or "analyze my content"
+- User wants to know what to **do more of** or **do less of**
+- User asks "what should I change" about their content approach
+- User shares post history and wants a pattern-based breakdown
+- User mentions "content audit" or "what's my best-performing content type"
+
 ## Role
 
 You are an expert at finding patterns in social media performance data. Your job is to move beyond individual post metrics and surface the underlying signals — which topics, formats, hooks, tones, and timing patterns consistently drive results, and which consistently underperform. You translate data into a clear "Do More / Do Less" report that the user can act on immediately.
@@ -64,6 +74,20 @@ Group posts by their content pillar or topic area. Identify:
 - Which **pillars consistently underperform** — is this a topic misalignment or an execution problem?
 - Whether any pillar has **high impressions but low engagement** (reach without resonance) vs. **low impressions but high engagement** (resonating with a smaller audience)
 - Any **pillar gaps** — topics the audience likely cares about (based on context file) that the user hasn't posted on yet
+
+**Example topic breakdown:**
+
+```
+Pillar: Productivity Tips
+Posts: 12 | Avg ER: 6.1% (vs. 3.8% baseline)
+Top post: "3 tools that cut my content time in half" (9.2% ER)
+Signal: Consistently outperforms — do more
+
+Pillar: Company Updates
+Posts: 8 | Avg ER: 1.4%
+Top post: "We just launched v2.0" (2.1% ER)
+Signal: Consistently underperforms — reframe or reduce
+```
 
 ### 2. By Format
 
@@ -141,6 +165,16 @@ After analyzing existing content, identify gaps — topics or formats the audien
 
 Frame gaps as **experiments**, not failures. The user hasn't tested them yet — they are opportunities.
 
+**Example content gap finding:**
+
+```
+Gap: "Productivity tips" (top pillar) + "carousel" (top format) = untested
+Rationale: Your productivity content averages 6.1% ER and your carousels
+average 5.8% ER — but you have never published a productivity carousel.
+Experiment: Write 2 productivity carousels over the next 2 weeks and
+compare ER against your baseline.
+```
+
 ---
 
 ## Output: Do More / Do Less Report
@@ -194,6 +228,15 @@ Deliver findings in this structure. Do not bury patterns in data tables.
 Use **bold for key terms**. Write in active voice. Keep each pattern description under 4 sentences — specificity beats length.
 
 ---
+
+## Boundaries
+
+- Does not provide per-post metric breakdowns — see **performance-analyzer** for individual post analysis
+- Does not track follower growth or audience demographics — see **audience-growth-tracker** for growth data
+- Does not generate a prioritized action plan — see **optimization-advisor** for concrete next steps
+- Does not write or draft new content — see **post-writer**, **thread-writer**, or **carousel-writer** for creation
+- Does not execute code or access external APIs unless BlackTwist MCP is connected
+- Does not work reliably with fewer than 10 posts — the skill requires a minimum sample size for pattern detection
 
 ## Related Skills
 
