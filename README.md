@@ -39,22 +39,61 @@ AI agent skills for social media content strategy, creation, and analysis across
 
 ## Installation
 
-### Claude Code plugin (recommended)
+### Option 1: CLI Install (Recommended)
+
+Use [npx skills](https://github.com/vercel-labs/skills) to install skills directly:
 
 ```bash
-claude plugin add blacktwist/social-media-skills
+# Install all skills
+npx skills add blacktwist/social-media-skills
+
+# Install specific skills
+npx skills add blacktwist/social-media-skills --skill post-writer hook-writer
+
+# List available skills
+npx skills add blacktwist/social-media-skills --list
 ```
 
-### Git submodule
+This automatically installs to your `.agents/skills/` directory (and symlinks into `.claude/skills/` for Claude Code compatibility).
+
+### Option 2: Clone and Copy
+
+Clone the entire repo and copy the skills folder:
 
 ```bash
-git submodule add https://github.com/blacktwist/social-media-skills .claude/skills/social-media-skills
+git clone https://github.com/blacktwist/social-media-skills.git
+cp -r social-media-skills/skills/* .agents/skills/
 ```
 
-### Git clone
+### Option 3: Git Submodule
+
+Add as a submodule for easy updates:
 
 ```bash
-git clone https://github.com/blacktwist/social-media-skills .claude/skills/social-media-skills
+git submodule add https://github.com/blacktwist/social-media-skills.git .agents/social-media-skills
+```
+
+Then reference skills from `.agents/social-media-skills/skills/`.
+
+### Option 4: Fork and Customize
+
+1. Fork this repository
+2. Customize skills for your specific needs
+3. Clone your fork into your projects
+
+### Option 5: SkillKit (Multi-Agent)
+
+Use [SkillKit](https://github.com/rohitg00/skillkit) to install skills across multiple AI agents (Claude Code, Cursor, Copilot, etc.):
+
+```bash
+# Install all skills
+npx skillkit install blacktwist/social-media-skills
+
+# Install specific skills
+npx skillkit install blacktwist/social-media-skills --skill post-writer hook-writer
+
+# List available skills
+npx skillkit install blacktwist/social-media-skills --list
 ```
 
 ## Supported Platforms
