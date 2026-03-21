@@ -1,6 +1,6 @@
 ---
-name: content-calendar
-description: "When the user wants to plan a posting schedule, create a content calendar, or organize when and what to post. Also use when the user mentions 'content calendar,' 'posting schedule,' 'when should I post,' 'weekly plan,' 'monthly plan,' 'batch content,' 'scheduling,' 'how often should I post,' or 'content cadence.' For deciding what topics to cover, see content-strategy. For writing the actual posts, see post-writer."
+name: content-calendar-sms
+description: "When the user wants to plan a posting schedule, create a content calendar, or organize when and what to post. Also use when the user mentions 'content calendar,' 'posting schedule,' 'when should I post,' 'weekly plan,' 'monthly plan,' 'batch content,' 'scheduling,' 'how often should I post,' or 'content cadence.' For deciding what topics to cover, see content-strategy-sms. For writing the actual posts, see post-writer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -24,7 +24,7 @@ This skill produces a **content calendar** the user can follow, schedule in adva
 
 ## Step 1 — Check for existing context
 
-Before asking any questions, check if `.agents/social-media-context.md` exists.
+Before asking any questions, check if `.agents/social-media-context-sms.md` exists.
 
 **If it exists:**
 1. Read the file in full.
@@ -33,7 +33,7 @@ Before asking any questions, check if `.agents/social-media-context.md` exists.
 4. Skip any discovery questions already answered.
 
 **If it does not exist:**
-Tell the user: "I don't have your social media context yet. Run the **social-media-context** skill first — it takes 5–10 minutes and makes scheduling much faster. Or answer a few quick questions and I'll build your calendar now."
+Tell the user: "I don't have your social media context yet. Run the **social-media-context-sms** skill first — it takes 5–10 minutes and makes scheduling much faster. Or answer a few quick questions and I'll build your calendar now."
 
 ---
 
@@ -234,22 +234,22 @@ Present the final calendar in this format:
 [List of flexible slots and their purpose]
 ```
 
-After presenting: "Ready to start filling in post drafts? Use **post-writer** to write content for any of these slots. Or connect BlackTwist to schedule directly."
+After presenting: "Ready to start filling in post drafts? Use **post-writer-sms** to write content for any of these slots. Or connect BlackTwist to schedule directly."
 
 ---
 
 ## Boundaries
 
-- Does not write the actual post content — see **post-writer** for drafting posts
-- Does not define content pillars or strategy from scratch — see **content-strategy** for that
-- Does not analyze past post performance — see **performance-analyzer** for analytics
-- Does not provide platform-specific algorithm tactics — see **platform-strategy** for platform guidance
+- Does not write the actual post content — see **post-writer-sms** for drafting posts
+- Does not define content pillars or strategy from scratch — see **content-strategy-sms** for that
+- Does not analyze past post performance — see **performance-analyzer-sms** for analytics
+- Does not provide platform-specific algorithm tactics — see **platform-strategy-sms** for platform guidance
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
-- Does not manage cross-posting or content adaptation — see **content-repurposer** for reformatting across platforms
+- Does not manage cross-posting or content adaptation — see **content-repurposer-sms** for reformatting across platforms
 
 ## See also
 
-**content-strategy** — defines your pillars and content mix before building the calendar
-**social-media-context** — foundational profile this skill reads from
-**post-writer** — writes the actual posts for each calendar slot
-**platform-strategy** — informs platform-specific frequency and format decisions
+**content-strategy-sms** — defines your pillars and content mix before building the calendar
+**social-media-context-sms** — foundational profile this skill reads from
+**post-writer-sms** — writes the actual posts for each calendar slot
+**platform-strategy-sms** — informs platform-specific frequency and format decisions

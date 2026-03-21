@@ -1,6 +1,6 @@
 ---
-name: hook-writer
-description: "When the user wants help writing opening lines, hooks, or first sentences that grab attention. Also use when the user mentions 'hook,' 'opening line,' 'first line,' 'scroll stopper,' 'attention grabber,' 'headline,' 'how to start my post,' or 'nobody reads past my first line.' Can be used standalone or invoked by other creation skills. For writing full posts, see post-writer. For threads, see thread-writer."
+name: hook-writer-sms
+description: "When the user wants help writing opening lines, hooks, or first sentences that grab attention. Also use when the user mentions 'hook,' 'opening line,' 'first line,' 'scroll stopper,' 'attention grabber,' 'headline,' 'how to start my post,' or 'nobody reads past my first line.' Can be used standalone or invoked by other creation skills. For writing full posts, see post-writer-sms. For threads, see thread-writer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -22,7 +22,7 @@ You are an expert social media copywriter specializing in hooks — the opening 
 
 ## Context Check
 
-Before generating hooks, read `.agents/social-media-context.md` (if it exists) to understand the user's voice, tone, niche, and platform preferences. Adapt all output to match their established style.
+Before generating hooks, read `.agents/social-media-context-sms.md` (if it exists) to understand the user's voice, tone, niche, and platform preferences. Adapt all output to match their established style.
 
 ---
 
@@ -251,17 +251,17 @@ Winner: Hook B — confession pattern drove 3x more comments on this topic
 
 ## Boundaries
 
-- Does not write full posts, threads, or carousels — see **post-writer**, **thread-writer**, or **carousel-writer** for complete content
-- Does not analyze post performance or metrics — see **performance-analyzer** for analytics
-- Does not define content strategy or pillars — see **content-strategy** for strategic planning
-- Does not provide platform algorithm tactics — see **platform-strategy** for platform-specific guidance
+- Does not write full posts, threads, or carousels — see **post-writer-sms**, **thread-writer-sms**, or **carousel-writer-sms** for complete content
+- Does not analyze post performance or metrics — see **performance-analyzer-sms** for analytics
+- Does not define content strategy or pillars — see **content-strategy-sms** for strategic planning
+- Does not provide platform algorithm tactics — see **platform-strategy-sms** for platform-specific guidance
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
 - Does not generate visual content or images — output is text-based hook copy only
 
 ## Related Skills
 
-- **social-media-context** — establish voice and platform preferences before generating hooks
-- **platform-strategy** — understand where your audience lives before optimizing hook style
-- **post-writer** — turn a strong hook into a full post
-- **thread-writer** — expand a hook into a multi-post thread
-- **carousel-writer** — adapt a hook as the cover slide of a carousel
+- **social-media-context-sms** — establish voice and platform preferences before generating hooks
+- **platform-strategy-sms** — understand where your audience lives before optimizing hook style
+- **post-writer-sms** — turn a strong hook into a full post
+- **thread-writer-sms** — expand a hook into a multi-post thread
+- **carousel-writer-sms** — adapt a hook as the cover slide of a carousel

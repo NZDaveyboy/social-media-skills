@@ -4,19 +4,19 @@
   "version": "1.0.0",
   "description": "Social media skills for AI agents — content strategy, creation, and analysis for LinkedIn, Twitter/X, Threads, and Bluesky",
   "skills": [
-    "social-media-context",
-    "content-strategy",
-    "content-calendar",
-    "platform-strategy",
-    "post-writer",
-    "thread-writer",
-    "carousel-writer",
-    "content-repurposer",
-    "hook-writer",
-    "performance-analyzer",
-    "audience-growth-tracker",
-    "content-pattern-analyzer",
-    "optimization-advisor"
+    "social-media-context-sms",
+    "content-strategy-sms",
+    "content-calendar-sms",
+    "platform-strategy-sms",
+    "post-writer-sms",
+    "thread-writer-sms",
+    "carousel-writer-sms",
+    "content-repurposer-sms",
+    "hook-writer-sms",
+    "performance-analyzer-sms",
+    "audience-growth-tracker-sms",
+    "content-pattern-analyzer-sms",
+    "optimization-advisor-sms"
   ],
   "strict": false
 }

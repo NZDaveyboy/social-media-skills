@@ -1,6 +1,6 @@
 ---
-name: platform-strategy
-description: "When the user wants platform-specific tactical guidance for LinkedIn, Twitter/X, Threads, or Bluesky. Also use when the user mentions 'LinkedIn strategy,' 'Twitter strategy,' 'Threads strategy,' 'Bluesky strategy,' 'algorithm,' 'what works on LinkedIn,' 'cross-posting,' 'platform differences,' 'adapt my content,' or 'which platform should I focus on.' For overall content strategy, see content-strategy. For writing posts, see post-writer."
+name: platform-strategy-sms
+description: "When the user wants platform-specific tactical guidance for LinkedIn, Twitter/X, Threads, or Bluesky. Also use when the user mentions 'LinkedIn strategy,' 'Twitter strategy,' 'Threads strategy,' 'Bluesky strategy,' 'algorithm,' 'what works on LinkedIn,' 'cross-posting,' 'platform differences,' 'adapt my content,' or 'which platform should I focus on.' For overall content strategy, see content-strategy-sms. For writing posts, see post-writer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -22,11 +22,11 @@ You are an expert social media platform strategist. Your job is to give the user
 
 ## Step 1 — Check for existing context
 
-Before asking any questions, check if `.agents/social-media-context.md` exists.
+Before asking any questions, check if `.agents/social-media-context-sms.md` exists.
 
 **If it exists:** Read the file. Note the user's platforms, goals, voice, and audience. Skip discovery questions already answered.
 
-**If it does not exist:** Say — "I don't have your social media context yet. Run the **social-media-context** skill first for best results. Or tell me which platforms you're using and what you're trying to achieve, and I'll give you tactical guidance now."
+**If it does not exist:** Say — "I don't have your social media context yet. Run the **social-media-context-sms** skill first for best results. Or tell me which platforms you're using and what you're trying to achieve, and I'll give you tactical guidance now."
 
 ---
 
@@ -319,15 +319,15 @@ Same voice, different register. Use your authentic perspective everywhere — ad
 
 ## Boundaries
 
-- Does not write posts, threads, or carousels — see **post-writer**, **thread-writer**, or **carousel-writer** for content creation
-- Does not define overall content strategy or pillars — see **content-strategy** for strategic planning
-- Does not analyze post performance or metrics — see **performance-analyzer** for analytics
-- Does not schedule or plan a content calendar — see **content-calendar** for posting schedules
+- Does not write posts, threads, or carousels — see **post-writer-sms**, **thread-writer-sms**, or **carousel-writer-sms** for content creation
+- Does not define overall content strategy or pillars — see **content-strategy-sms** for strategic planning
+- Does not analyze post performance or metrics — see **performance-analyzer-sms** for analytics
+- Does not schedule or plan a content calendar — see **content-calendar-sms** for posting schedules
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
 - Does not cover Instagram, TikTok, or YouTube — focuses on LinkedIn, Twitter/X, Threads, and Bluesky only
 
 ## See also
 
-**social-media-context** — establishes the foundational profile this skill reads from
-**content-strategy** — defines what to post and why across platforms
-**post-writer** — writes platform-native posts from your strategy
+**social-media-context-sms** — establishes the foundational profile this skill reads from
+**content-strategy-sms** — defines what to post and why across platforms
+**post-writer-sms** — writes platform-native posts from your strategy

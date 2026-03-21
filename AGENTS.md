@@ -9,9 +9,9 @@ social-media-skills/
 ├── .claude-plugin/
 │   └── marketplace.json       # Plugin manifest
 ├── skills/
-│   ├── social-media-context/
+│   ├── social-media-context-sms/
 │   │   └── SKILL.md
-│   ├── content-strategy/
+│   ├── content-strategy-sms/
 │   │   └── SKILL.md
 │   └── <skill-name>/
 │       └── SKILL.md
@@ -53,7 +53,7 @@ Field constraints:
 
 - **Lowercase only** — no uppercase letters anywhere in skill names or directory names
 - **Alphanumeric and hyphens only** — no spaces, underscores, dots, or special characters
-- **Kebab-case** — words separated by single hyphens (e.g. `hook-writer`, not `hookwriter` or `hook_writer`)
+- **Kebab-case** — words separated by single hyphens (e.g. `hook-writer-sms`, not `hookwriter` or `hook_writer`)
 - The `name` field in frontmatter must match the directory name exactly
 
 ### File Size
@@ -86,9 +86,9 @@ Use **conventional commits** for all changes to this repository:
 | `chore:` | Tooling, config, or maintenance changes |
 
 Example commit messages:
-- `feat: add hook-writer skill`
-- `update: expand platform-strategy with Bluesky guidance`
-- `fix: correct frontmatter version field in post-writer`
+- `feat: add hook-writer-sms skill`
+- `update: expand platform-strategy-sms with Bluesky guidance`
+- `fix: correct frontmatter version field in post-writer-sms`
 - `chore: update validate-skills.sh to check metadata.version`
 
 ## Validation

@@ -1,6 +1,6 @@
 ---
-name: thread-writer
-description: "When the user wants to write a multi-part thread for Twitter/X, LinkedIn, or other platforms. Also use when the user mentions 'thread,' 'Twitter thread,' 'tweetstorm,' 'multi-part post,' 'series of posts,' or has a long-form idea that needs breaking into parts. For single posts, see post-writer. For carousels, see carousel-writer."
+name: thread-writer-sms
+description: "When the user wants to write a multi-part thread for Twitter/X, LinkedIn, or other platforms. Also use when the user mentions 'thread,' 'Twitter thread,' 'tweetstorm,' 'multi-part post,' 'series of posts,' or has a long-form idea that needs breaking into parts. For single posts, see post-writer-sms. For carousels, see carousel-writer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -22,11 +22,11 @@ You are an expert at writing social media threads — multi-part content sequenc
 
 ## Context Check
 
-Before writing, read `.agents/social-media-context.md` to understand the user's voice, tone, content pillars, and platform preferences. Use this file to match vocabulary, sentence structure, punctuation habits, and emotional register.
+Before writing, read `.agents/social-media-context-sms.md` to understand the user's voice, tone, content pillars, and platform preferences. Use this file to match vocabulary, sentence structure, punctuation habits, and emotional register.
 
 If the file does not exist, say:
 
-> "I don't see a social media context file yet. Run the `social-media-context` skill first to capture your voice and preferences — it makes every thread I write sound like you."
+> "I don't see a social media context file yet. Run the `social-media-context-sms` skill first to capture your voice and preferences — it makes every thread I write sound like you."
 
 ---
 
@@ -51,7 +51,7 @@ Every thread has three distinct zones: the **hook**, the **body**, and the **clo
 
 The hook post must do two jobs simultaneously: stand alone as a compelling post and compel the reader to click through the entire thread.
 
-- Apply hook-writer patterns (contrarian, question, story opener, statistic, bold claim, empathy, before/after, confession)
+- Apply hook-writer-sms patterns (contrarian, question, story opener, statistic, bold claim, empathy, before/after, confession)
 - Make a promise — what will the reader know, feel, or be able to do after this thread?
 - On Twitter/X: include a thread signal ("A thread:" or "🧵") on the same line or immediately after the hook
 - The hook must be strong enough to perform as a standalone post — most readers decide here
@@ -263,16 +263,16 @@ Before delivering the final thread, verify:
 
 ## Boundaries
 
-- Does not write single standalone posts — see **post-writer** for short-form content
-- Does not write carousels or slide decks — see **carousel-writer** for slide-by-slide content
-- Does not analyze post performance or metrics — see **performance-analyzer** for analytics
-- Does not define content strategy or decide what to post — see **content-strategy** for planning
+- Does not write single standalone posts — see **post-writer-sms** for short-form content
+- Does not write carousels or slide decks — see **carousel-writer-sms** for slide-by-slide content
+- Does not analyze post performance or metrics — see **performance-analyzer-sms** for analytics
+- Does not define content strategy or decide what to post — see **content-strategy-sms** for planning
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
 - Does not produce visual design or images — output is text copy for each thread post only
 
 ## Related Skills
 
-- **social-media-context** — establish voice, pillars, and platform preferences before writing
-- **hook-writer** — generate and test opening lines before threading
-- **platform-strategy** — decide which platform to prioritize and why
-- **post-writer** — write a single post when the idea doesn't need a thread
+- **social-media-context-sms** — establish voice, pillars, and platform preferences before writing
+- **hook-writer-sms** — generate and test opening lines before threading
+- **platform-strategy-sms** — decide which platform to prioritize and why
+- **post-writer-sms** — write a single post when the idea doesn't need a thread

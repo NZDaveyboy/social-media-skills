@@ -1,6 +1,6 @@
 ---
-name: content-strategy
-description: "When the user wants to plan a social media content strategy, decide what to post, or figure out topic clusters and content mix. Also use when the user mentions 'content strategy,' 'what should I post,' 'content ideas,' 'topic clusters,' 'content pillars,' 'content planning,' 'content mix,' 'I don't know what to post,' or 'social media strategy.' Use this to define the what and why of posting. For writing actual posts, see post-writer. For scheduling, see content-calendar. For platform-specific tactics, see platform-strategy."
+name: content-strategy-sms
+description: "When the user wants to plan a social media content strategy, decide what to post, or figure out topic clusters and content mix. Also use when the user mentions 'content strategy,' 'what should I post,' 'content ideas,' 'topic clusters,' 'content pillars,' 'content planning,' 'content mix,' 'I don't know what to post,' or 'social media strategy.' Use this to define the what and why of posting. For writing actual posts, see post-writer-sms. For scheduling, see content-calendar-sms. For platform-specific tactics, see platform-strategy-sms."
 metadata:
   version: 1.0.0
 ---
@@ -24,7 +24,7 @@ This skill produces a **content strategy document** the user can reference when 
 
 ## Step 1 — Check for existing context
 
-Before asking any questions, check if `.agents/social-media-context.md` exists.
+Before asking any questions, check if `.agents/social-media-context-sms.md` exists.
 
 **If it exists:**
 1. Read the file in full.
@@ -33,7 +33,7 @@ Before asking any questions, check if `.agents/social-media-context.md` exists.
 4. Proceed to Step 2 with that information pre-loaded.
 
 **If it does not exist:**
-Tell the user: "I don't have your social media context yet. Run the **social-media-context** skill first to set up your profile — it takes 5–10 minutes and makes every other skill much faster. Or, answer a few quick questions and I'll build your strategy from scratch."
+Tell the user: "I don't have your social media context yet. Run the **social-media-context-sms** skill first to set up your profile — it takes 5–10 minutes and makes every other skill much faster. Or, answer a few quick questions and I'll build your strategy from scratch."
 
 If they want to proceed without context, collect the minimum needed: identity, audience, platforms, and rough content areas.
 
@@ -235,21 +235,21 @@ Compile everything into a structured document the user can save and reference. U
 
 After presenting the document, ask: "Does this match your direction? Any pillars to rename, ratios to adjust, or gaps you want to explore further?"
 
-Apply revisions, then confirm: "Strategy saved. Use **content-calendar** to turn this into a posting schedule, or **post-writer** to start creating content from these pillars."
+Apply revisions, then confirm: "Strategy saved. Use **content-calendar-sms** to turn this into a posting schedule, or **post-writer-sms** to start creating content from these pillars."
 
 ---
 
 ## Boundaries
 
-- Does not write individual posts or threads — see **post-writer** or **thread-writer** for content creation
-- Does not build a posting schedule or calendar — see **content-calendar** for scheduling
-- Does not analyze past post performance — see **performance-analyzer** or **content-pattern-analyzer** for analytics
-- Does not provide platform-specific algorithm tactics — see **platform-strategy** for platform guidance
+- Does not write individual posts or threads — see **post-writer-sms** or **thread-writer-sms** for content creation
+- Does not build a posting schedule or calendar — see **content-calendar-sms** for scheduling
+- Does not analyze past post performance — see **performance-analyzer-sms** or **content-pattern-analyzer-sms** for analytics
+- Does not provide platform-specific algorithm tactics — see **platform-strategy-sms** for platform guidance
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
-- Does not set up the user's voice profile or identity — see **social-media-context** for foundational setup
+- Does not set up the user's voice profile or identity — see **social-media-context-sms** for foundational setup
 
 ## See also
 
-**social-media-context** — establishes the foundational profile this skill reads from
-**platform-strategy** — develops platform-specific tactics from your content pillars
-**content-calendar** — turns your strategy into a scheduled posting plan
+**social-media-context-sms** — establishes the foundational profile this skill reads from
+**platform-strategy-sms** — develops platform-specific tactics from your content pillars
+**content-calendar-sms** — turns your strategy into a scheduled posting plan

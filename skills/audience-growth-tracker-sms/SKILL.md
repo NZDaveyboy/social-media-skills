@@ -1,6 +1,6 @@
 ---
-name: audience-growth-tracker
-description: "When the user wants to track follower growth, understand what drives new followers, or analyze audience development. Also use when the user mentions 'follower growth,' 'followers,' 'audience growth,' 'gaining followers,' 'losing followers,' 'who follows me,' or 'grow my audience.' Uses BlackTwist follower data when available. For post-level metrics, see performance-analyzer. For content patterns, see content-pattern-analyzer."
+name: audience-growth-tracker-sms
+description: "When the user wants to track follower growth, understand what drives new followers, or analyze audience development. Also use when the user mentions 'follower growth,' 'followers,' 'audience growth,' 'gaining followers,' 'losing followers,' 'who follows me,' or 'grow my audience.' Uses BlackTwist follower data when available. For post-level metrics, see performance-analyzer-sms. For content patterns, see content-pattern-analyzer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -23,7 +23,7 @@ You are an expert audience growth analyst. Your job is to turn follower data int
 
 ## Context Check
 
-Before analyzing anything, read `.agents/social-media-context.md` (if it exists). This file contains the user's niche, platforms, goals, and growth targets. Use it to make every insight specific to their situation — including their milestone goals if captured.
+Before analyzing anything, read `.agents/social-media-context-sms.md` (if it exists). This file contains the user's niche, platforms, goals, and growth targets. Use it to make every insight specific to their situation — including their milestone goals if captured.
 
 ---
 
@@ -163,7 +163,7 @@ Identify which pattern the user currently has, and whether it matches their goal
 
 ## Platform-Specific Growth Dynamics
 
-Apply platform context from `.agents/social-media-context.md`. Focus analysis on the platforms the user actually uses.
+Apply platform context from `.agents/social-media-context-sms.md`. Focus analysis on the platforms the user actually uses.
 
 ### LinkedIn
 
@@ -264,15 +264,15 @@ Write in active voice throughout. Bold key terms. Keep the report scannable — 
 
 ## Boundaries
 
-- Does not write or draft social media posts — see **post-writer** for that
-- Does not analyze individual post metrics — see **performance-analyzer** for per-post breakdowns
-- Does not identify content patterns across topics or formats — see **content-pattern-analyzer** for pattern detection
-- Does not generate a content strategy or recommendations plan — see **optimization-advisor** for action plans
+- Does not write or draft social media posts — see **post-writer-sms** for that
+- Does not analyze individual post metrics — see **performance-analyzer-sms** for per-post breakdowns
+- Does not identify content patterns across topics or formats — see **content-pattern-analyzer-sms** for pattern detection
+- Does not generate a content strategy or recommendations plan — see **optimization-advisor-sms** for action plans
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
 - Does not provide vanity metric comparisons against industry benchmarks — all analysis uses the user's own data as the baseline
 
 ## Related Skills
 
-- **social-media-context** — establish niche, platforms, and growth goals before analyzing
-- **performance-analyzer** — analyze post-level metrics (impressions, engagement rate, saves)
-- **optimization-advisor** — translate growth findings into a concrete improvement plan
+- **social-media-context-sms** — establish niche, platforms, and growth goals before analyzing
+- **performance-analyzer-sms** — analyze post-level metrics (impressions, engagement rate, saves)
+- **optimization-advisor-sms** — translate growth findings into a concrete improvement plan

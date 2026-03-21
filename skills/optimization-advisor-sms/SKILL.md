@@ -1,6 +1,6 @@
 ---
-name: optimization-advisor
-description: "When the user wants concrete recommendations on how to improve their social media performance. Also use when the user mentions 'what should I do next,' 'how do I improve,' 'optimize my social media,' 'recommendations,' 'suggestions,' 'next steps,' 'what's my biggest opportunity,' or 'help me grow.' Synthesizes insights from performance, audience, and pattern analysis into prioritized actions. For raw analytics, see performance-analyzer. For growth tracking, see audience-growth-tracker. For pattern detection, see content-pattern-analyzer."
+name: optimization-advisor-sms
+description: "When the user wants concrete recommendations on how to improve their social media performance. Also use when the user mentions 'what should I do next,' 'how do I improve,' 'optimize my social media,' 'recommendations,' 'suggestions,' 'next steps,' 'what's my biggest opportunity,' or 'help me grow.' Synthesizes insights from performance, audience, and pattern analysis into prioritized actions. For raw analytics, see performance-analyzer-sms. For growth tracking, see audience-growth-tracker-sms. For pattern detection, see content-pattern-analyzer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -22,9 +22,9 @@ You are an expert social media optimization advisor. Your job is to synthesize e
 
 ## Context Check
 
-Before generating any recommendations, read `.agents/social-media-context.md` (if it exists). This file contains the user's niche, voice, platforms, goals, and audience. Use it to filter every recommendation through their specific situation — a recommendation that is correct for a B2B SaaS founder is wrong for a personal finance creator.
+Before generating any recommendations, read `.agents/social-media-context-sms.md` (if it exists). This file contains the user's niche, voice, platforms, goals, and audience. Use it to filter every recommendation through their specific situation — a recommendation that is correct for a B2B SaaS founder is wrong for a personal finance creator.
 
-Also check whether any recent analysis exists from sibling skills. If the user has already run performance-analyzer, audience-growth-tracker, or content-pattern-analyzer in this session, incorporate those findings directly rather than re-pulling data.
+Also check whether any recent analysis exists from sibling skills. If the user has already run performance-analyzer-sms, audience-growth-tracker-sms, or content-pattern-analyzer-sms in this session, incorporate those findings directly rather than re-pulling data.
 
 ---
 
@@ -34,11 +34,11 @@ Also check whether any recent analysis exists from sibling skills. If the user h
 
 If the user has already completed one or more of the following, build on those findings:
 
-- **performance-analyzer findings** — top and bottom posts, engagement trends, posting patterns
-- **audience-growth-tracker findings** — growth rate, growth drivers, spike correlations, milestone progress
-- **content-pattern-analyzer findings** — Do More / Do Less patterns, untested combinations, format and topic performance
+- **performance-analyzer-sms findings** — top and bottom posts, engagement trends, posting patterns
+- **audience-growth-tracker-sms findings** — growth rate, growth drivers, spike correlations, milestone progress
+- **content-pattern-analyzer-sms findings** — Do More / Do Less patterns, untested combinations, format and topic performance
 
-Pull these together into a unified picture. Look for convergence: if performance-analyzer says Tuesday educational threads win AND content-pattern-analyzer confirms the list format outperforms, that is a high-confidence signal worth a top-priority recommendation.
+Pull these together into a unified picture. Look for convergence: if performance-analyzer-sms says Tuesday educational threads win AND content-pattern-analyzer-sms confirms the list format outperforms, that is a high-confidence signal worth a top-priority recommendation.
 
 ### Path B — No Prior Analysis
 
@@ -243,16 +243,16 @@ Do not manufacture confidence. A calibrated "this looks promising, test it" is m
 
 ## Boundaries
 
-- Does not pull raw metrics or build analytics dashboards — see **performance-analyzer** for data collection
-- Does not track follower growth or audience demographics — see **audience-growth-tracker** for growth data
-- Does not detect content patterns from scratch — see **content-pattern-analyzer** for pattern analysis
-- Does not write or draft content — see **post-writer**, **thread-writer**, or **carousel-writer** for creation
+- Does not pull raw metrics or build analytics dashboards — see **performance-analyzer-sms** for data collection
+- Does not track follower growth or audience demographics — see **audience-growth-tracker-sms** for growth data
+- Does not detect content patterns from scratch — see **content-pattern-analyzer-sms** for pattern analysis
+- Does not write or draft content — see **post-writer-sms**, **thread-writer-sms**, or **carousel-writer-sms** for creation
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
 - Does not provide generic advice — every recommendation must reference the user's own data or stated context
 
 ## Related Skills
 
-- **performance-analyzer** — get raw post metrics and per-post diagnoses before advising
-- **audience-growth-tracker** — understand follower growth patterns before advising on growth tactics
-- **content-pattern-analyzer** — identify Do More / Do Less patterns before advising on content mix
-- **social-media-context** — establish niche, voice, and goals as the foundation for any recommendation
+- **performance-analyzer-sms** — get raw post metrics and per-post diagnoses before advising
+- **audience-growth-tracker-sms** — understand follower growth patterns before advising on growth tactics
+- **content-pattern-analyzer-sms** — identify Do More / Do Less patterns before advising on content mix
+- **social-media-context-sms** — establish niche, voice, and goals as the foundation for any recommendation

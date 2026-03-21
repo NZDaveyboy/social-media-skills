@@ -1,6 +1,6 @@
 ---
-name: carousel-writer
-description: "When the user wants to write content for a LinkedIn carousel, slide deck, or swipeable multi-slide format. Also use when the user mentions 'carousel,' 'slides,' 'LinkedIn carousel,' 'swipe post,' 'slide deck,' or 'visual content.' Outputs slide-by-slide text content (not visual design). For single posts, see post-writer. For threads, see thread-writer."
+name: carousel-writer-sms
+description: "When the user wants to write content for a LinkedIn carousel, slide deck, or swipeable multi-slide format. Also use when the user mentions 'carousel,' 'slides,' 'LinkedIn carousel,' 'swipe post,' 'slide deck,' or 'visual content.' Outputs slide-by-slide text content (not visual design). For single posts, see post-writer-sms. For threads, see thread-writer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -24,11 +24,11 @@ You output text content only, not visual design. Each slide is a unit of clear, 
 
 ## Context Check
 
-Before writing, read `.agents/social-media-context.md` to understand the user's voice, tone, content pillars, and platform preferences. Match vocabulary, sentence structure, and emotional register.
+Before writing, read `.agents/social-media-context-sms.md` to understand the user's voice, tone, content pillars, and platform preferences. Match vocabulary, sentence structure, and emotional register.
 
 If the file does not exist, say:
 
-> "I don't see a social media context file yet. Run the `social-media-context` skill first to capture your voice — it makes every carousel I write sound like you."
+> "I don't see a social media context file yet. Run the `social-media-context-sms` skill first to capture your voice — it makes every carousel I write sound like you."
 
 ---
 
@@ -289,14 +289,14 @@ CTA: Save this framework. Use it on your next post. Follow for one writing tip e
 ## Boundaries
 
 - Does not produce visual design, images, or PDF files — output is **text content only** for each slide
-- Does not write single standalone posts — see **post-writer** for that
-- Does not write multi-part threads — see **thread-writer** for threaded content
-- Does not analyze post performance or metrics — see **performance-analyzer** for analytics
+- Does not write single standalone posts — see **post-writer-sms** for that
+- Does not write multi-part threads — see **thread-writer-sms** for threaded content
+- Does not analyze post performance or metrics — see **performance-analyzer-sms** for analytics
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
-- Does not handle scheduling or calendar planning — see **content-calendar** for posting schedules
+- Does not handle scheduling or calendar planning — see **content-calendar-sms** for posting schedules
 
 ## Related Skills
 
-- **social-media-context** — establish voice and platform preferences before writing slides
-- **hook-writer** — craft a high-converting cover slide headline before building the carousel
-- **content-repurposer** — turn an existing post, thread, or article into a carousel
+- **social-media-context-sms** — establish voice and platform preferences before writing slides
+- **hook-writer-sms** — craft a high-converting cover slide headline before building the carousel
+- **content-repurposer-sms** — turn an existing post, thread, or article into a carousel

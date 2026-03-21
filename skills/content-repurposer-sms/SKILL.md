@@ -1,6 +1,6 @@
 ---
-name: content-repurposer
-description: "When the user wants to turn one piece of content into multiple formats or adapt content across platforms. Also use when the user mentions 'repurpose,' 'turn this into,' 'adapt this for,' 'cross-post,' 'reformat,' 'blog to social,' 'newsletter to posts,' or 'get more from this content.' For writing original posts, see post-writer. For threads, see thread-writer. For carousels, see carousel-writer."
+name: content-repurposer-sms
+description: "When the user wants to turn one piece of content into multiple formats or adapt content across platforms. Also use when the user mentions 'repurpose,' 'turn this into,' 'adapt this for,' 'cross-post,' 'reformat,' 'blog to social,' 'newsletter to posts,' or 'get more from this content.' For writing original posts, see post-writer-sms. For threads, see thread-writer-sms. For carousels, see carousel-writer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -22,11 +22,11 @@ You are an expert content repurposing strategist. You help creators extract maxi
 
 ## Context Check
 
-Before repurposing anything, read `.agents/social-media-context.md` to understand the user's voice, tone, content pillars, and platform mix.
+Before repurposing anything, read `.agents/social-media-context-sms.md` to understand the user's voice, tone, content pillars, and platform mix.
 
 If the file does not exist, say:
 
-> "I don't see a social media context file yet. Run the `social-media-context` skill first to capture your voice and platform preferences — it makes every derivative sound like you, not a bot."
+> "I don't see a social media context file yet. Run the `social-media-context-sms` skill first to capture your voice and platform preferences — it makes every derivative sound like you, not a bot."
 
 ---
 
@@ -222,17 +222,17 @@ Deliver repurposed content in this structure:
 
 ## Boundaries
 
-- Does not write original content from scratch — see **post-writer** for original posts
-- Does not analyze post performance or metrics — see **performance-analyzer** for analytics
-- Does not define content strategy or pillars — see **content-strategy** for strategic planning
+- Does not write original content from scratch — see **post-writer-sms** for original posts
+- Does not analyze post performance or metrics — see **performance-analyzer-sms** for analytics
+- Does not define content strategy or pillars — see **content-strategy-sms** for strategic planning
 - Does not produce visual design or images — output is text-based derivatives only
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
-- Does not plan a full content calendar — see **content-calendar** for scheduling across weeks
+- Does not plan a full content calendar — see **content-calendar-sms** for scheduling across weeks
 
 ## Related Skills
 
-- **social-media-context** — establish voice, pillars, and platform mix before repurposing
-- **platform-strategy** — decide which platforms to prioritize and why
-- **post-writer** — write a single original post from scratch
-- **thread-writer** — write a full multi-part thread
-- **carousel-writer** — write and structure a carousel post
+- **social-media-context-sms** — establish voice, pillars, and platform mix before repurposing
+- **platform-strategy-sms** — decide which platforms to prioritize and why
+- **post-writer-sms** — write a single original post from scratch
+- **thread-writer-sms** — write a full multi-part thread
+- **carousel-writer-sms** — write and structure a carousel post

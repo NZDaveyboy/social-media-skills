@@ -1,6 +1,6 @@
 ---
-name: performance-analyzer
-description: "When the user wants to analyze how their social media posts are performing. Also use when the user mentions 'analytics,' 'performance,' 'how did my posts do,' 'engagement,' 'impressions,' 'what's working,' 'post metrics,' 'my best posts,' or 'why isn't this post performing.' Uses BlackTwist analytics when available, works from user-provided data otherwise. For audience growth specifically, see audience-growth-tracker. For pattern detection, see content-pattern-analyzer. For actionable next steps, see optimization-advisor."
+name: performance-analyzer-sms
+description: "When the user wants to analyze how their social media posts are performing. Also use when the user mentions 'analytics,' 'performance,' 'how did my posts do,' 'engagement,' 'impressions,' 'what's working,' 'post metrics,' 'my best posts,' or 'why isn't this post performing.' Uses BlackTwist analytics when available, works from user-provided data otherwise. For audience growth specifically, see audience-growth-tracker-sms. For pattern detection, see content-pattern-analyzer-sms. For actionable next steps, see optimization-advisor-sms."
 metadata:
   version: 1.0.0
 ---
@@ -22,7 +22,7 @@ You are an expert social media analytics advisor. Your job is to turn raw post d
 
 ## Context Check
 
-Before analyzing anything, read `.agents/social-media-context.md` (if it exists). This file contains the user's niche, voice, platforms, and goals. Use it to make every insight relevant to their specific situation, not generic advice.
+Before analyzing anything, read `.agents/social-media-context-sms.md` (if it exists). This file contains the user's niche, voice, platforms, and goals. Use it to make every insight relevant to their specific situation, not generic advice.
 
 ---
 
@@ -216,15 +216,15 @@ Keep the report scannable. Use bold for key terms. Avoid tables with more than 5
 
 ## Boundaries
 
-- Does not track follower growth or audience demographics — see **audience-growth-tracker** for growth analysis
-- Does not detect cross-post content patterns — see **content-pattern-analyzer** for pattern detection across many posts
-- Does not generate a prioritized action plan — see **optimization-advisor** for concrete next steps
-- Does not write or draft content — see **post-writer** for content creation
+- Does not track follower growth or audience demographics — see **audience-growth-tracker-sms** for growth analysis
+- Does not detect cross-post content patterns — see **content-pattern-analyzer-sms** for pattern detection across many posts
+- Does not generate a prioritized action plan — see **optimization-advisor-sms** for concrete next steps
+- Does not write or draft content — see **post-writer-sms** for content creation
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
 - Does not cite industry benchmarks unless explicitly requested — all comparisons use the user's own averages
 
 ## Related Skills
 
-- **social-media-context** — establish niche, voice, and goals before analyzing
-- **content-pattern-analyzer** — go deeper on what content patterns drive performance
-- **optimization-advisor** — translate analysis findings into a concrete improvement plan
+- **social-media-context-sms** — establish niche, voice, and goals before analyzing
+- **content-pattern-analyzer-sms** — go deeper on what content patterns drive performance
+- **optimization-advisor-sms** — translate analysis findings into a concrete improvement plan

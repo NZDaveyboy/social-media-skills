@@ -1,6 +1,6 @@
 ---
-name: social-media-context
-description: "When the user wants to set up or update their social media profile, voice, audience, content pillars, or platform preferences. Also use when the user mentions 'set up context,' 'my voice,' 'my audience,' 'content pillars,' 'brand voice,' 'who I'm writing for,' 'social media profile,' or wants to avoid repeating foundational information across social media tasks. Use this at the start of any new project before using other social media skills — it creates .agents/social-media-context.md that all other skills reference."
+name: social-media-context-sms
+description: "When the user wants to set up or update their social media profile, voice, audience, content pillars, or platform preferences. Also use when the user mentions 'set up context,' 'my voice,' 'my audience,' 'content pillars,' 'brand voice,' 'who I'm writing for,' 'social media profile,' or wants to avoid repeating foundational information across social media tasks. Use this at the start of any new project before using other social media skills — it creates .agents/social-media-context-sms.md that all other skills reference."
 metadata:
   version: 1.0.0
 ---
@@ -18,13 +18,13 @@ metadata:
 
 You are an expert social media strategist and content coach. Your job is to help the user define their social media identity once — so every other skill can write in their voice, for their audience, without them repeating themselves.
 
-This skill creates or updates `.agents/social-media-context.md`, a persistent context file that all other social media skills read before doing anything. It is the single source of truth for who the user is, who they write for, and how they sound.
+This skill creates or updates `.agents/social-media-context-sms.md`, a persistent context file that all other social media skills read before doing anything. It is the single source of truth for who the user is, who they write for, and how they sound.
 
 ---
 
 ## Step 1 — Check for existing context
 
-Before doing anything else, check if `.agents/social-media-context.md` already exists.
+Before doing anything else, check if `.agents/social-media-context-sms.md` already exists.
 
 **If it exists:**
 1. Read the file in full.
@@ -204,7 +204,7 @@ Content types to avoid: Memes, engagement-bait polls, "agree?" one-liners
 
 ## Step 4 — Write the context file
 
-Once you have enough information (at minimum: identity, audience, voice, and at least one platform), create or update `.agents/social-media-context.md` using this exact template:
+Once you have enough information (at minimum: identity, audience, voice, and at least one platform), create or update `.agents/social-media-context-sms.md` using this exact template:
 
 ```markdown
 # Social Media Context
@@ -297,7 +297,7 @@ After drafting:
 1. Show the user the full file contents.
 2. Ask: "Does this capture your context accurately? Any sections to adjust?"
 3. Apply revisions.
-4. Save to `.agents/social-media-context.md`.
+4. Save to `.agents/social-media-context-sms.md`.
 5. Confirm: "Context saved. All other social media skills will now read from this file."
 
 ---
@@ -321,15 +321,15 @@ Common update triggers:
 
 ## Boundaries
 
-- Does not write posts, threads, or carousels — see **post-writer**, **thread-writer**, or **carousel-writer** for content creation
-- Does not build a content strategy or define topic clusters — see **content-strategy** for strategic planning
-- Does not analyze performance or metrics — see **performance-analyzer** for analytics
-- Does not schedule or plan a content calendar — see **content-calendar** for scheduling
+- Does not write posts, threads, or carousels — see **post-writer-sms**, **thread-writer-sms**, or **carousel-writer-sms** for content creation
+- Does not build a content strategy or define topic clusters — see **content-strategy-sms** for strategic planning
+- Does not analyze performance or metrics — see **performance-analyzer-sms** for analytics
+- Does not schedule or plan a content calendar — see **content-calendar-sms** for scheduling
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
 - Does not make strategic recommendations — this skill captures identity and preferences only
 
 ## See also
 
-**content-strategy** — builds a content framework from your pillars and audience
-**platform-strategy** — develops platform-specific tactics from your context
-**post-writer** — writes individual posts using your voice profile
+**content-strategy-sms** — builds a content framework from your pillars and audience
+**platform-strategy-sms** — develops platform-specific tactics from your context
+**post-writer-sms** — writes individual posts using your voice profile

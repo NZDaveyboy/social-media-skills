@@ -11,25 +11,25 @@ Each skill lives in `skills/<name>/SKILL.md` and provides structured guidance fo
 Skills are organized into four layers, each building on the previous.
 
 ### Foundation
-- **social-media-context** — establishes shared context, platform knowledge, and user preferences used by all other skills
+- **social-media-context-sms** — establishes shared context, platform knowledge, and user preferences used by all other skills
 
 ### Strategy
-- **content-strategy** — defines content pillars, audience targeting, and positioning
-- **content-calendar** — plans publishing cadence, themes, and scheduling across platforms
-- **platform-strategy** — tailors approach per platform based on audience and format strengths
+- **content-strategy-sms** — defines content pillars, audience targeting, and positioning
+- **content-calendar-sms** — plans publishing cadence, themes, and scheduling across platforms
+- **platform-strategy-sms** — tailors approach per platform based on audience and format strengths
 
 ### Creation
-- **post-writer** — writes single standalone posts optimized per platform
-- **thread-writer** — writes multi-post threads with narrative arc and strong hooks
-- **carousel-writer** — writes slide-by-slide carousel scripts for LinkedIn and similar formats
-- **content-repurposer** — transforms existing content into new formats and platforms
-- **hook-writer** — crafts high-performing opening lines to maximize engagement
+- **post-writer-sms** — writes single standalone posts optimized per platform
+- **thread-writer-sms** — writes multi-post threads with narrative arc and strong hooks
+- **carousel-writer-sms** — writes slide-by-slide carousel scripts for LinkedIn and similar formats
+- **content-repurposer-sms** — transforms existing content into new formats and platforms
+- **hook-writer-sms** — crafts high-performing opening lines to maximize engagement
 
 ### Analysis
-- **performance-analyzer** — interprets post and account metrics to surface insights
-- **audience-growth-tracker** — tracks follower trends and identifies growth drivers
-- **content-pattern-analyzer** — identifies what content types and topics perform best
-- **optimization-advisor** — recommends specific improvements based on data patterns
+- **performance-analyzer-sms** — interprets post and account metrics to surface insights
+- **audience-growth-tracker-sms** — tracks follower trends and identifies growth drivers
+- **content-pattern-analyzer-sms** — identifies what content types and topics perform best
+- **optimization-advisor-sms** — recommends specific improvements based on data patterns
 
 ## Key Conventions
 
@@ -56,9 +56,9 @@ Every `SKILL.md` must open with YAML frontmatter containing:
 
 ## Foundation Dependency
 
-All skills (except `social-media-context` itself) **check for `.agents/social-media-context.md` first** before proceeding. This file contains user-specific context: platforms used, audience description, content pillars, tone preferences, and account handles.
+All skills (except `social-media-context-sms` itself) **check for `.agents/social-media-context-sms.md` first** before proceeding. This file contains user-specific context: platforms used, audience description, content pillars, tone preferences, and account handles.
 
-If `.agents/social-media-context.md` is not present, the skill should prompt the agent to run `social-media-context` first, or proceed with reasonable defaults while noting the limitation.
+If `.agents/social-media-context-sms.md` is not present, the skill should prompt the agent to run `social-media-context-sms` first, or proceed with reasonable defaults while noting the limitation.
 
 ## BlackTwist MCP Integration
 
@@ -76,14 +76,14 @@ See `tools/REGISTRY.md` for the full list of available BlackTwist tools.
 Skills should reference related skills where relevant. Use the format:
 
 ```
-See also: **thread-writer**, **hook-writer**
+See also: **thread-writer-sms**, **hook-writer-sms**
 ```
 
 Common cross-reference patterns:
-- Creation skills reference **hook-writer** for opening lines
-- Creation skills reference **content-strategy** for pillar alignment
-- Analysis skills reference **optimization-advisor** for next steps
-- **content-repurposer** references all creation skills as output targets
+- Creation skills reference **hook-writer-sms** for opening lines
+- Creation skills reference **content-strategy-sms** for pillar alignment
+- Analysis skills reference **optimization-advisor-sms** for next steps
+- **content-repurposer-sms** references all creation skills as output targets
 
 ## Validation
 

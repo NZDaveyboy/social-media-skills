@@ -1,6 +1,6 @@
 ---
-name: post-writer
-description: "When the user wants to write a social media post for LinkedIn, Twitter/X, Threads, or Bluesky. Also use when the user mentions 'write a post,' 'draft a post,' 'LinkedIn post,' 'tweet,' 'Threads post,' 'Bluesky post,' 'social media post,' 'help me write,' or shares a topic and wants it turned into a post. For multi-part content, see thread-writer. For carousels, see carousel-writer. For opening lines specifically, see hook-writer."
+name: post-writer-sms
+description: "When the user wants to write a social media post for LinkedIn, Twitter/X, Threads, or Bluesky. Also use when the user mentions 'write a post,' 'draft a post,' 'LinkedIn post,' 'tweet,' 'Threads post,' 'Bluesky post,' 'social media post,' 'help me write,' or shares a topic and wants it turned into a post. For multi-part content, see thread-writer-sms. For carousels, see carousel-writer-sms. For opening lines specifically, see hook-writer-sms."
 metadata:
   version: 1.0.0
 ---
@@ -22,11 +22,11 @@ You are an expert social media writer who crafts platform-native posts that stop
 
 ## Context Check
 
-Before writing, read `.agents/social-media-context.md` to understand the user's voice, tone, content pillars, platform preferences, and example posts. Use this file to match vocabulary, sentence structure, punctuation habits, and emotional register.
+Before writing, read `.agents/social-media-context-sms.md` to understand the user's voice, tone, content pillars, platform preferences, and example posts. Use this file to match vocabulary, sentence structure, punctuation habits, and emotional register.
 
 If the file does not exist, say:
 
-> "I don't see a social media context file yet. Run the `social-media-context` skill first to capture your voice and preferences — it takes about 5 minutes and makes every post I write sound like you."
+> "I don't see a social media context file yet. Run the `social-media-context-sms` skill first to capture your voice and preferences — it takes about 5 minutes and makes every post I write sound like you."
 
 ---
 
@@ -104,7 +104,7 @@ What's one thing you learned the hard way about visibility?
 **Format:**
 - Hook → Core message → CTA — all in one tight unit
 - Under 280 characters for single tweets
-- Thread format if the idea needs more space (see thread-writer)
+- Thread format if the idea needs more space (see thread-writer-sms)
 
 **Specs:**
 - 0-2 hashtags maximum — hashtag stuffing kills reach on X
@@ -154,7 +154,7 @@ the people who win are the ones who post anyway.
 
 ## Writing Process
 
-1. **Select or generate a hook** — use patterns from hook-writer (contrarian, question, story opener, statistic, list preview, bold claim, empathy, before/after, confession). Match the hook pattern to the platform and content type.
+1. **Select or generate a hook** — use patterns from hook-writer-sms (contrarian, question, story opener, statistic, list preview, bold claim, empathy, before/after, confession). Match the hook pattern to the platform and content type.
 
 2. **Draft the post body** — use the user's voice from the context file. Mirror their vocabulary, sentence rhythm, and punctuation habits. Do not impose a generic "expert" voice.
 
@@ -213,16 +213,16 @@ Before delivering the final post, verify:
 
 ## Boundaries
 
-- Does not write multi-part threads — see **thread-writer** for threaded content
-- Does not write carousels or slide decks — see **carousel-writer** for slide-by-slide content
-- Does not analyze post performance or metrics — see **performance-analyzer** for analytics
-- Does not define content strategy or decide what to post — see **content-strategy** for planning
+- Does not write multi-part threads — see **thread-writer-sms** for threaded content
+- Does not write carousels or slide decks — see **carousel-writer-sms** for slide-by-slide content
+- Does not analyze post performance or metrics — see **performance-analyzer-sms** for analytics
+- Does not define content strategy or decide what to post — see **content-strategy-sms** for planning
 - Does not execute code or access external APIs unless BlackTwist MCP is connected
 - Does not produce visual design or images — output is text copy only, ready to paste
 
 ## Related Skills
 
-- **social-media-context** — capture voice, pillars, and platform preferences before writing
-- **hook-writer** — generate and test opening lines independently
-- **platform-strategy** — decide which platform to prioritize before writing
-- **content-repurposer** — adapt a finished post across multiple platforms
+- **social-media-context-sms** — capture voice, pillars, and platform preferences before writing
+- **hook-writer-sms** — generate and test opening lines independently
+- **platform-strategy-sms** — decide which platform to prioritize before writing
+- **content-repurposer-sms** — adapt a finished post across multiple platforms
